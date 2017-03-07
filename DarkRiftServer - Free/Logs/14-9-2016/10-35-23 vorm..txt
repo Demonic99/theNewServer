@@ -1,0 +1,20 @@
+14.9.2016 10:35:23 vorm.	[Trace]	#### Server boot ####
+14.9.2016 10:35:23 vorm.	[Trace]	#### Server boot ####
+14.9.2016 10:35:23 vorm.	[Log]	Server mounted, listening on port 4296
+14.9.2016 10:35:24 vorm.	[Trace]	Found plugin: C:\Users\DemonicLP\Desktop\DarkRiftServer - Free\Plugins\Toriel.dll, type of Toriel.Toriel
+14.9.2016 10:35:24 vorm.	[Trace]	Found a total of 1 plugins.
+14.9.2016 10:35:24 vorm.	[Log]	Nyan! :3
+14.9.2016 10:35:24 vorm.	[Log]	Loaded plugin: Tutorial plugin Version: 1.0
+14.9.2016 10:35:28 vorm.	[Trace]	Executing command SetLog
+14.9.2016 10:36:08 vorm.	[Trace]	Executing command LogPerformance
+14.9.2016 10:36:08 vorm.	[Log]	*************************************************
+Performance stats:
+	Total Connection Read Time:	0ms
+			Header:		0ms
+			Body:		0ms
+		Average:		0ms
+			Header:		0ms
+			Body:		0ms
+	Total Execution Time:		0ms
+		Average:		0ms
+*************************************************

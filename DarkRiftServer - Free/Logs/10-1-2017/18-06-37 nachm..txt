@@ -1,0 +1,22 @@
+10.1.2017 18:06:37 nachm.	[Trace]	#### Server boot ####
+10.1.2017 18:06:37 nachm.	[Trace]	#### Server boot ####
+10.1.2017 18:06:38 nachm.	[Log]	Server mounted, listening on port 4296
+10.1.2017 18:06:38 nachm.	[Trace]	Found plugin: C:\Users\DemonicLP\Desktop\DarkRiftServer - Free\Plugins\Asgore.dll, type of Asgore.Asgore
+10.1.2017 18:06:38 nachm.	[Trace]	Found a total of 1 plugins.
+10.1.2017 18:06:38 nachm.	[Log]	Nyan! :3
+10.1.2017 18:06:38 nachm.	[Log]	Loaded plugin: Asgore Version: 1.0
+10.1.2017 18:09:36 nachm.	[Log]	Connected: 127.0.0.1:60565
+10.1.2017 18:09:36 nachm.	[Trace]	Exception trace connection accepting thread in Main
+10.1.2017 18:09:36 nachm.	[Error]	System.IO.IOException: In die Übertragungsverbindung können keine Daten geschrieben werden: Eine vorhandene Verbindung wurde vom Remotehost geschlossen. ---> System.Net.Sockets.SocketException: Eine vorhandene Verbindung wurde vom Remotehost geschlossen
+   bei System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   bei System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   --- Ende der internen Ausnahmestapelüberwachung ---
+   bei System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   bei DarkRift.ConnectionService.Handshake()
+   bei DarkRift.ConnectionService..ctor(Socket socket, UInt16 id)
+   bei DarkRift.DarkRiftServer.AcceptClient(IAsyncResult result)
+10.1.2017 18:09:36 nachm.	[Log]	Connected: 127.0.0.1:60598
+10.1.2017 18:10:06 nachm.	[Log]	Disconnected: 127.0.0.1:60598
+10.1.2017 18:10:07 nachm.	[Log]	Connected: 127.0.0.1:60618
+10.1.2017 18:10:43 nachm.	[Log]	register
+10.1.2017 18:10:44 nachm.	[Log]	count is 0

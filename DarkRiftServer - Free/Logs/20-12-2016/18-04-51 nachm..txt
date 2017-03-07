@@ -1,0 +1,34 @@
+20.12.2016 18:04:51 nachm.	[Trace]	#### Server boot ####
+20.12.2016 18:04:51 nachm.	[Trace]	#### Server boot ####
+20.12.2016 18:04:51 nachm.	[Log]	Server mounted, listening on port 4296
+20.12.2016 18:04:51 nachm.	[Trace]	Found plugin: C:\Users\DemonicLP\Desktop\DarkRiftServer - Free\Plugins\Asgore.dll, type of Asgore.Asgore
+20.12.2016 18:04:51 nachm.	[Trace]	Found a total of 1 plugins.
+20.12.2016 18:04:51 nachm.	[Log]	Nyan! :3
+20.12.2016 18:04:51 nachm.	[Log]	Loaded plugin: Asgore Version: 1.0
+20.12.2016 18:04:56 nachm.	[Log]	Connected: 127.0.0.1:61478
+20.12.2016 18:04:58 nachm.	[Trace]	Exception trace ConnectionService.ProcessDataItem
+20.12.2016 18:04:58 nachm.	[Error]	System.ObjectDisposedException: Cannot access a disposed object. A common cause of this error is disposing a context that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling Dispose() on the context, or wrapping the context in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Objektname: "AsgoreDatabaseContext".
+   bei Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   bei Microsoft.EntityFrameworkCore.DbContext.get_ChangeTracker()
+   bei Microsoft.EntityFrameworkCore.Query.CompiledQueryCacheKeyGenerator.GenerateCacheKeyCore(Expression query, Boolean async)
+   bei Microsoft.EntityFrameworkCore.Query.Internal.RelationalCompiledQueryCacheKeyGenerator.GenerateCacheKeyCore(Expression query, Boolean async)
+   bei Microsoft.EntityFrameworkCore.Query.Internal.RelationalCompiledQueryCacheKeyGenerator.GenerateCacheKey(Expression query, Boolean async)
+   bei Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQuery[TResult](Expression query)
+   bei Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   bei Asgore.Asgore.login(ConnectionService con, NetworkMessage msg)
+   bei Asgore.Asgore.OnDataReceived(ConnectionService con, NetworkMessage& msg)
+   bei DarkRift.ConnectionService.ProcessDataItem(Object context)
+20.12.2016 18:05:09 nachm.	[Trace]	Exception trace ConnectionService.ProcessDataItem
+20.12.2016 18:05:09 nachm.	[Error]	System.ObjectDisposedException: Cannot access a disposed object. A common cause of this error is disposing a context that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling Dispose() on the context, or wrapping the context in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Objektname: "AsgoreDatabaseContext".
+   bei Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   bei Microsoft.EntityFrameworkCore.DbContext.get_ChangeTracker()
+   bei Microsoft.EntityFrameworkCore.Query.CompiledQueryCacheKeyGenerator.GenerateCacheKeyCore(Expression query, Boolean async)
+   bei Microsoft.EntityFrameworkCore.Query.Internal.RelationalCompiledQueryCacheKeyGenerator.GenerateCacheKeyCore(Expression query, Boolean async)
+   bei Microsoft.EntityFrameworkCore.Query.Internal.RelationalCompiledQueryCacheKeyGenerator.GenerateCacheKey(Expression query, Boolean async)
+   bei Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQuery[TResult](Expression query)
+   bei Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   bei Asgore.Asgore.login(ConnectionService con, NetworkMessage msg)
+   bei Asgore.Asgore.OnDataReceived(ConnectionService con, NetworkMessage& msg)
+   bei DarkRift.ConnectionService.ProcessDataItem(Object context)

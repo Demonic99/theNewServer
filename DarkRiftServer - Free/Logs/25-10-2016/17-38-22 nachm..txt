@@ -1,0 +1,132 @@
+25.10.2016 17:38:22 nachm.	[Trace]	#### Server boot ####
+25.10.2016 17:38:22 nachm.	[Trace]	#### Server boot ####
+25.10.2016 17:38:22 nachm.	[Log]	Server mounted, listening on port 4296
+25.10.2016 17:38:22 nachm.	[Trace]	Found plugin: C:\Users\DemonicLP\Desktop\DarkRiftServer - Free\Plugins\Toriel.dll, type of Toriel.Toriel
+25.10.2016 17:38:22 nachm.	[Trace]	Found a total of 1 plugins.
+25.10.2016 17:38:22 nachm.	[Log]	Nyan! :3
+25.10.2016 17:38:22 nachm.	[Log]	Loaded plugin: Tutorial plugin Version: 1.0
+25.10.2016 17:40:12 nachm.	[Error]	No such command found!
+25.10.2016 17:40:12 nachm.	[Trace]	Could not execute command networkmessage.decodedata() as was not present in commands dictionary.
+25.10.2016 17:40:59 nachm.	[Trace]	Executing command LogPerformance
+25.10.2016 17:40:59 nachm.	[Log]	*************************************************
+Performance stats:
+	Total Connection Read Time:	0ms
+			Header:		0ms
+			Body:		0ms
+		Average:		0ms
+			Header:		0ms
+			Body:		0ms
+	Total Execution Time:		0ms
+		Average:		0ms
+*************************************************
+25.10.2016 17:43:00 nachm.	[Trace]	Executing command SetLog
+25.10.2016 17:43:00 nachm.	[Error]	SetLog Command should only have 1 argument: 'on' or 'off'!
+25.10.2016 17:43:05 nachm.	[Trace]	Executing command SetLog
+25.10.2016 17:43:10 nachm.	[Trace]	Executing command SetLog
+25.10.2016 17:43:16 nachm.	[Trace]	Executing command SetLog
+25.10.2016 17:43:21 nachm.	[Trace]	Executing command LogPerformance
+25.10.2016 17:43:21 nachm.	[Log]	*************************************************
+Performance stats:
+	Total Connection Read Time:	0ms
+			Header:		0ms
+			Body:		0ms
+		Average:		0ms
+			Header:		0ms
+			Body:		0ms
+	Total Execution Time:		0ms
+		Average:		0ms
+*************************************************
+25.10.2016 17:43:29 nachm.	[Trace]	Executing command SetLog
+25.10.2016 18:02:27 nachm.	[Trace]	Executing command SetLog
+25.10.2016 18:02:32 nachm.	[Trace]	Executing command LogPerformance
+25.10.2016 18:02:32 nachm.	[Log]	*************************************************
+Performance stats:
+	Total Connection Read Time:	0ms
+			Header:		0ms
+			Body:		0ms
+		Average:		0ms
+			Header:		0ms
+			Body:		0ms
+	Total Execution Time:		0ms
+		Average:		0ms
+*************************************************
+25.10.2016 18:04:01 nachm.	[Log]	Connected: 127.0.0.1:60757
+25.10.2016 18:04:01 nachm.	[Log]	Connected: 127.0.0.1:60758
+25.10.2016 18:04:01 nachm.	[Log]	Received data from 18464
+25.10.2016 18:04:01 nachm.	[Log]	Connected: 127.0.0.1:60759
+25.10.2016 18:04:02 nachm.	[Error]	You've sent a message with a custom distribution type. You need to specify what to do with this data in a plugin!
+25.10.2016 18:04:20 nachm.	[Log]	Disconnected: 127.0.0.1:60757
+25.10.2016 18:04:21 nachm.	[Log]	Disconnected: 127.0.0.1:60758
+25.10.2016 18:04:21 nachm.	[Log]	Disconnected: 127.0.0.1:60759
+25.10.2016 18:04:49 nachm.	[Error]	No such command found!
+25.10.2016 18:04:49 nachm.	[Trace]	Could not execute command logperfrmance as was not present in commands dictionary.
+25.10.2016 18:04:54 nachm.	[Trace]	Executing command LogPerformance
+25.10.2016 18:04:54 nachm.	[Log]	*************************************************
+Performance stats:
+	Total Connection Read Time:	6ms
+			Header:		6ms
+			Body:		0ms
+		Average:		6ms
+			Header:		6ms
+			Body:		0ms
+	Total Execution Time:		423ms
+		Average:		423ms
+*************************************************
+25.10.2016 18:05:18 nachm.	[Trace]	Executing command LogPerformance
+25.10.2016 18:05:18 nachm.	[Log]	*************************************************
+Performance stats:
+	Total Connection Read Time:	6ms
+			Header:		6ms
+			Body:		0ms
+		Average:		6ms
+			Header:		6ms
+			Body:		0ms
+	Total Execution Time:		423ms
+		Average:		423ms
+*************************************************
+25.10.2016 18:05:50 nachm.	[Log]	Connected: 127.0.0.1:60829
+25.10.2016 18:05:50 nachm.	[Log]	Connected: 127.0.0.1:60830
+25.10.2016 18:05:50 nachm.	[Log]	Received data from 18464
+25.10.2016 18:05:51 nachm.	[Log]	Connected: 127.0.0.1:60831
+25.10.2016 18:05:51 nachm.	[Error]	You've sent a message with a custom distribution type. You need to specify what to do with this data in a plugin!
+25.10.2016 18:06:05 nachm.	[Trace]	Executing command LogPerformance
+25.10.2016 18:06:05 nachm.	[Log]	*************************************************
+Performance stats:
+	Total Connection Read Time:	7ms
+			Header:		7ms
+			Body:		0ms
+		Average:		3.5ms
+			Header:		3.5ms
+			Body:		0ms
+	Total Execution Time:		929ms
+		Average:		464.5ms
+*************************************************
+25.10.2016 18:06:30 nachm.	[Trace]	Executing command SetLog
+25.10.2016 18:06:32 nachm.	[Trace]	Executing command LogPerformance
+25.10.2016 18:06:32 nachm.	[Log]	*************************************************
+Performance stats:
+	Total Connection Read Time:	7ms
+			Header:		7ms
+			Body:		0ms
+		Average:		3.5ms
+			Header:		3.5ms
+			Body:		0ms
+	Total Execution Time:		929ms
+		Average:		464.5ms
+*************************************************
+25.10.2016 18:06:38 nachm.	[Trace]	Executing command SetLog
+25.10.2016 18:06:41 nachm.	[Trace]	Executing command LogPerformance
+25.10.2016 18:06:41 nachm.	[Log]	*************************************************
+Performance stats:
+	Total Connection Read Time:	7ms
+			Header:		7ms
+			Body:		0ms
+		Average:		3.5ms
+			Header:		3.5ms
+			Body:		0ms
+	Total Execution Time:		929ms
+		Average:		464.5ms
+*************************************************
+25.10.2016 18:07:04 nachm.	[Log]	Disconnected: 127.0.0.1:60830
+25.10.2016 18:07:04 nachm.	[Log]	Disconnected: 127.0.0.1:60831
+25.10.2016 18:09:23 nachm.	[Log]	Disconnected: 127.0.0.1:60829

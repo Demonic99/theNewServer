@@ -1,0 +1,4 @@
+13.9.2016 17:55:01 nachm.	[Trace]	#### Server boot ####
+13.9.2016 17:55:01 nachm.	[Trace]	#### Server boot ####
+13.9.2016 17:55:01 nachm.	[Log]	Server mounted, listening on port 4296
+13.9.2016 17:55:01 nachm.	[Trace]	Found a total of 0 plugins.

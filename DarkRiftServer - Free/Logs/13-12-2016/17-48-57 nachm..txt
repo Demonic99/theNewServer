@@ -1,0 +1,18 @@
+13.12.2016 17:48:57 nachm.	[Trace]	#### Server boot ####
+13.12.2016 17:48:57 nachm.	[Trace]	#### Server boot ####
+13.12.2016 17:48:57 nachm.	[Log]	Server mounted, listening on port 4296
+13.12.2016 17:48:57 nachm.	[Error]	Plugin C:\Users\DemonicLP\Desktop\DarkRiftServer - Free\Plugins\Asgore.dll failed to load: 
+System.Reflection.ReflectionTypeLoadException: Mindestens ein Typ in der Assembly kann nicht geladen werden. Rufen Sie die LoaderExceptions-Eigenschaft ab, wenn Sie weitere Informationen benötigen.
+   bei System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   bei System.Reflection.Assembly.GetTypes()
+   bei DarkRift.PluginManager.LoadPluginsFromFolder()
+13.12.2016 17:48:57 nachm.	[Trace]	Exception trace PluginManager.LoadPlugins
+13.12.2016 17:48:57 nachm.	[Error]	System.IO.FileNotFoundException: Die Datei oder Assembly "Microsoft.EntityFrameworkCore, Version=1.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" oder eine Abhängigkeit davon wurde nicht gefunden. Das System kann die angegebene Datei nicht finden.
+Dateiname: "Microsoft.EntityFrameworkCore, Version=1.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+
+WRN: Protokollierung der Assemblybindung ist AUS.
+Sie können die Protokollierung der Assemblybindungsfehler aktivieren, indem Sie den Registrierungswert [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) auf 1 festlegen.
+Hinweis: Die Protokollierung der Assemblybindungsfehler führt zu einer gewissen Leistungseinbuße.
+Sie können dieses Feature deaktivieren, indem Sie den Registrierungswert [HKLM\Software\Microsoft\Fusion!EnableLog] entfernen.
+
+13.12.2016 17:48:57 nachm.	[Trace]	Found a total of 0 plugins.

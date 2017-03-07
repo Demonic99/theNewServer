@@ -1,0 +1,22 @@
+13.12.2016 18:03:47 nachm.	[Trace]	#### Server boot ####
+13.12.2016 18:03:47 nachm.	[Trace]	#### Server boot ####
+13.12.2016 18:03:47 nachm.	[Log]	Server mounted, listening on port 4296
+13.12.2016 18:03:47 nachm.	[Trace]	Found plugin: C:\Users\DemonicLP\Desktop\DarkRiftServer - Free\Plugins\Asgore.dll, type of Asgore.Asgore
+13.12.2016 18:03:47 nachm.	[Trace]	Found a total of 1 plugins.
+13.12.2016 18:03:47 nachm.	[Log]	Nyan! :3
+13.12.2016 18:03:48 nachm.	[Error]	Plugin Asgore.Asgore failed to instantiate: 
+System.Reflection.TargetInvocationException: Ein Aufrufziel hat einen Ausnahmefehler verursacht. ---> System.BadImageFormatException: Es wurde versucht, eine Datei mit einem falschen Format zu laden. (Ausnahme von HRESULT: 0x8007000B)
+   bei Microsoft.Data.Sqlite.Interop.NativeMethods.Sqlite3_sqlite3.sqlite3_open_v2(IntPtr filename, Sqlite3Handle& ppDb, Int32 flags, IntPtr vfs)
+   bei Microsoft.Data.Sqlite.Interop.NativeMethods.sqlite3_open_v2(String filename, Sqlite3Handle& ppDb, Int32 flags, String vfs)
+   bei Microsoft.Data.Sqlite.SqliteConnection.Open()
+   bei Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open()
+   bei Microsoft.EntityFrameworkCore.Storage.Internal.SqliteRelationalConnection.Open()
+   bei Microsoft.EntityFrameworkCore.Storage.Internal.SqliteDatabaseCreator.Exists()
+   bei Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.EnsureCreated()
+   bei Asgore.Asgore..ctor()
+   --- Ende der internen Ausnahmestapelüberwachung ---
+   bei System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   bei System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   bei System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   bei System.Activator.CreateInstance(Type type)
+   bei DarkRift.PluginManager.LoadPlugins(Type[] forceLoadPlugins)

@@ -1,0 +1,28 @@
+10.1.2017 17:54:34 nachm.	[Trace]	#### Server boot ####
+10.1.2017 17:54:34 nachm.	[Trace]	#### Server boot ####
+10.1.2017 17:54:34 nachm.	[Log]	Server mounted, listening on port 4296
+10.1.2017 17:54:34 nachm.	[Trace]	Found plugin: C:\Users\DemonicLP\Desktop\DarkRiftServer - Free\Plugins\Asgore.dll, type of Asgore.Asgore
+10.1.2017 17:54:34 nachm.	[Trace]	Found a total of 1 plugins.
+10.1.2017 17:54:34 nachm.	[Log]	Nyan! :3
+10.1.2017 17:54:34 nachm.	[Log]	Loaded plugin: Asgore Version: 1.0
+10.1.2017 17:54:35 nachm.	[Log]	Connected: 127.0.0.1:60503
+10.1.2017 17:54:38 nachm.	[Log]	Disconnected: 127.0.0.1:60503
+10.1.2017 17:54:39 nachm.	[Log]	Connected: 127.0.0.1:60505
+10.1.2017 17:54:52 nachm.	[Log]	register
+10.1.2017 17:54:53 nachm.	[Log]	count is 0
+10.1.2017 17:55:26 nachm.	[Trace]	Exception trace ConnectionService.ProcessDataItem
+10.1.2017 17:55:26 nachm.	[Error]	Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Microsoft.Data.Sqlite.SqliteException: SQLite Error 5: 'database is locked'.
+   bei Microsoft.Data.Sqlite.Interop.MarshalEx.ThrowExceptionForRC(Int32 rc, Sqlite3Handle db)
+   bei Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   bei Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, String executeMethod, IReadOnlyDictionary`2 parameterValues, Boolean closeConnection)
+   bei Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   bei Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- Ende der internen Ausnahmestapelüberwachung ---
+   bei Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   bei Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(Tuple`2 parameters)
+   bei Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   bei Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   bei Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   bei Asgore.Asgore.Register(ConnectionService con, NetworkMessage msg)
+   bei Asgore.Asgore.OnDataReceived(ConnectionService con, NetworkMessage& msg)
+   bei DarkRift.ConnectionService.ProcessDataItem(Object context)

@@ -1,0 +1,13 @@
+6.12.2016 17:06:16 nachm.	[Trace]	#### Server boot ####
+6.12.2016 17:06:16 nachm.	[Trace]	#### Server boot ####
+6.12.2016 17:06:16 nachm.	[Log]	Server mounted, listening on port 4296
+6.12.2016 17:06:16 nachm.	[Trace]	Found plugin: C:\Users\DemonicLP\Desktop\DarkRiftServer - Free\Plugins\Asgore.dll, type of Asgore.Asgore
+6.12.2016 17:06:16 nachm.	[Trace]	Found a total of 1 plugins.
+6.12.2016 17:06:16 nachm.	[Log]	Nyan! :3
+6.12.2016 17:06:16 nachm.	[Log]	Loaded plugin: Asgore Version: 1.0
+6.12.2016 17:06:23 nachm.	[Log]	Connected: 127.0.0.1:62184
+6.12.2016 17:06:26 nachm.	[Log]	Disconnected: 127.0.0.1:62184
+6.12.2016 17:06:41 nachm.	[Log]	Connected: 127.0.0.1:62195
+6.12.2016 17:07:00 nachm.	[Log]	Disconnected: 127.0.0.1:62195
+6.12.2016 17:07:07 nachm.	[Log]	Connected: 127.0.0.1:62200
+6.12.2016 17:07:24 nachm.	[Log]	Disconnected: 127.0.0.1:62200

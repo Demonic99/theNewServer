@@ -1,0 +1,11 @@
+14.9.2016 10:06:25 vorm.	[Trace]	#### Server boot ####
+14.9.2016 10:06:25 vorm.	[Trace]	#### Server boot ####
+14.9.2016 10:06:25 vorm.	[Log]	Server mounted, listening on port 4296
+14.9.2016 10:06:25 vorm.	[Trace]	Found plugin: C:\Users\DemonicLP\Desktop\DarkRiftServer - Free\Plugins\Toriel.dll, type of Toriel.Toriel
+14.9.2016 10:06:25 vorm.	[Trace]	Found a total of 1 plugins.
+14.9.2016 10:06:25 vorm.	[Log]	Nyan! :3
+14.9.2016 10:06:25 vorm.	[Log]	Loaded plugin: Tutorial plugin Version: 1.0
+14.9.2016 10:06:43 vorm.	[Error]	No such command found!
+14.9.2016 10:06:43 vorm.	[Trace]	Could not execute command setlog as was not present in commands dictionary.
+14.9.2016 10:06:52 vorm.	[Error]	No such command found!
+14.9.2016 10:06:52 vorm.	[Trace]	Could not execute command "setlog" as was not present in commands dictionary.

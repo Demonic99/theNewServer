@@ -1,0 +1,27 @@
+10.1.2017 17:14:59 nachm.	[Trace]	#### Server boot ####
+10.1.2017 17:14:59 nachm.	[Trace]	#### Server boot ####
+10.1.2017 17:14:59 nachm.	[Log]	Server mounted, listening on port 4296
+10.1.2017 17:14:59 nachm.	[Trace]	Found plugin: C:\Users\DemonicLP\Desktop\DarkRiftServer - Free\Plugins\Asgore.dll, type of Asgore.Asgore
+10.1.2017 17:14:59 nachm.	[Trace]	Found a total of 1 plugins.
+10.1.2017 17:14:59 nachm.	[Log]	Nyan! :3
+10.1.2017 17:14:59 nachm.	[Log]	Loaded plugin: Asgore Version: 1.0
+10.1.2017 17:15:54 nachm.	[Log]	Connected: 127.0.0.1:60119
+10.1.2017 17:16:00 nachm.	[Log]	Disconnected: 127.0.0.1:60119
+10.1.2017 17:16:13 nachm.	[Log]	Connected: 127.0.0.1:60124
+10.1.2017 17:16:19 nachm.	[Log]	Disconnected: 127.0.0.1:60124
+10.1.2017 17:16:38 nachm.	[Log]	Connected: 127.0.0.1:60127
+10.1.2017 17:17:26 nachm.	[Log]	Disconnected: 127.0.0.1:60127
+10.1.2017 17:17:26 nachm.	[Log]	Connected: 127.0.0.1:60137
+10.1.2017 17:17:27 nachm.	[Trace]	Exception trace ConnectionService.ProcessDataItem
+10.1.2017 17:17:27 nachm.	[Error]	System.ObjectDisposedException: Cannot access a disposed object. A common cause of this error is disposing a context that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling Dispose() on the context, or wrapping the context in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Objektname: "AsgoreDatabaseContext".
+   bei Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   bei Microsoft.EntityFrameworkCore.DbContext.get_ChangeTracker()
+   bei Microsoft.EntityFrameworkCore.Query.CompiledQueryCacheKeyGenerator.GenerateCacheKeyCore(Expression query, Boolean async)
+   bei Microsoft.EntityFrameworkCore.Query.Internal.RelationalCompiledQueryCacheKeyGenerator.GenerateCacheKeyCore(Expression query, Boolean async)
+   bei Microsoft.EntityFrameworkCore.Query.Internal.RelationalCompiledQueryCacheKeyGenerator.GenerateCacheKey(Expression query, Boolean async)
+   bei Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQuery[TResult](Expression query)
+   bei Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   bei Asgore.Asgore.Register(ConnectionService con, NetworkMessage msg)
+   bei Asgore.Asgore.OnDataReceived(ConnectionService con, NetworkMessage& msg)
+   bei DarkRift.ConnectionService.ProcessDataItem(Object context)

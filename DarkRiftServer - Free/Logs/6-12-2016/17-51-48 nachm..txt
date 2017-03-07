@@ -1,0 +1,21 @@
+6.12.2016 17:51:48 nachm.	[Trace]	#### Server boot ####
+6.12.2016 17:51:48 nachm.	[Trace]	#### Server boot ####
+6.12.2016 17:51:48 nachm.	[Log]	Server mounted, listening on port 4296
+6.12.2016 17:51:48 nachm.	[Trace]	Found plugin: C:\Users\DemonicLP\Desktop\DarkRiftServer - Free\Plugins\Asgore.dll, type of Asgore.Asgore
+6.12.2016 17:51:49 nachm.	[Error]	Plugin C:\Users\DemonicLP\Desktop\DarkRiftServer - Free\Plugins\MySQLConnector.dll failed to load: 
+System.BadImageFormatException: Die Datei oder Assembly "file:///C:\Users\DemonicLP\Desktop\DarkRiftServer - Free\Plugins\MySQLConnector.dll" oder eine Abhängigkeit davon wurde nicht gefunden. Es wurde versucht, eine Datei mit einem falschen Format zu laden.
+Dateiname: "file:///C:\Users\DemonicLP\Desktop\DarkRiftServer - Free\Plugins\MySQLConnector.dll"
+   bei System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   bei System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   bei System.Reflection.RuntimeAssembly.InternalLoadFrom(String assemblyFile, Evidence securityEvidence, Byte[] hashValue, AssemblyHashAlgorithm hashAlgorithm, Boolean forIntrospection, Boolean suppressSecurityChecks, StackCrawlMark& stackMark)
+   bei System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   bei DarkRift.PluginManager.LoadPluginsFromFolder()
+
+WRN: Protokollierung der Assemblybindung ist AUS.
+Sie können die Protokollierung der Assemblybindungsfehler aktivieren, indem Sie den Registrierungswert [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) auf 1 festlegen.
+Hinweis: Die Protokollierung der Assemblybindungsfehler führt zu einer gewissen Leistungseinbuße.
+Sie können dieses Feature deaktivieren, indem Sie den Registrierungswert [HKLM\Software\Microsoft\Fusion!EnableLog] entfernen.
+
+6.12.2016 17:51:49 nachm.	[Trace]	Found a total of 1 plugins.
+6.12.2016 17:51:49 nachm.	[Log]	Nyan! :3
+6.12.2016 17:51:49 nachm.	[Log]	Loaded plugin: Asgore Version: 1.0

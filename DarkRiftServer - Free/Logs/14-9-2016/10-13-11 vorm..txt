@@ -1,0 +1,32 @@
+14.9.2016 10:13:11 vorm.	[Trace]	#### Server boot ####
+14.9.2016 10:13:11 vorm.	[Trace]	#### Server boot ####
+14.9.2016 10:13:12 vorm.	[Log]	Server mounted, listening on port 4296
+14.9.2016 10:13:12 vorm.	[Trace]	Found plugin: C:\Users\DemonicLP\Desktop\DarkRiftServer - Free\Plugins\Toriel.dll, type of Toriel.Toriel
+14.9.2016 10:13:12 vorm.	[Trace]	Found a total of 1 plugins.
+14.9.2016 10:13:12 vorm.	[Log]	Nyan! :3
+14.9.2016 10:13:12 vorm.	[Log]	Loaded plugin: Tutorial plugin Version: 1.0
+14.9.2016 10:13:15 vorm.	[Trace]	Executing command SetLog
+14.9.2016 10:13:15 vorm.	[Error]	SetLog Command should only have 1 argument: 'on' or 'off'!
+14.9.2016 10:13:22 vorm.	[Error]	No such command found!
+14.9.2016 10:13:22 vorm.	[Trace]	Could not execute command on as was not present in commands dictionary.
+14.9.2016 10:13:28 vorm.	[Trace]	Executing command SetLog
+14.9.2016 10:13:33 vorm.	[Trace]	Executing command SetLog
+14.9.2016 10:13:47 vorm.	[Trace]	Executing command SetLog
+14.9.2016 10:13:53 vorm.	[Trace]	Executing command SetLog
+14.9.2016 10:13:53 vorm.	[Error]	SetLog Command should only have 1 argument: 'on' or 'off'!
+14.9.2016 10:13:59 vorm.	[Trace]	Executing command SetLog
+14.9.2016 10:14:29 vorm.	[Trace]	Executing command SetLog
+14.9.2016 10:14:29 vorm.	[Error]	SetLog Command's argument should only ever be: 'on' or 'off'!
+14.9.2016 10:14:35 vorm.	[Trace]	Executing command SetLog
+14.9.2016 10:14:54 vorm.	[Trace]	Executing command LogPerformance
+14.9.2016 10:14:54 vorm.	[Log]	*************************************************
+Performance stats:
+	Total Connection Read Time:	0ms
+			Header:		0ms
+			Body:		0ms
+		Average:		0ms
+			Header:		0ms
+			Body:		0ms
+	Total Execution Time:		0ms
+		Average:		0ms
+*************************************************

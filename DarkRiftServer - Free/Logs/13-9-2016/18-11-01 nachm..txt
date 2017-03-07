@@ -1,0 +1,9 @@
+13.9.2016 18:11:01 nachm.	[Trace]	#### Server boot ####
+13.9.2016 18:11:01 nachm.	[Trace]	#### Server boot ####
+13.9.2016 18:11:01 nachm.	[Log]	Server mounted, listening on port 4296
+13.9.2016 18:11:01 nachm.	[Trace]	Found plugin: C:\Users\DemonicLP\Desktop\DarkRiftServer - Free\Plugins\Toriel.dll, type of Toriel.Toriel
+13.9.2016 18:11:01 nachm.	[Trace]	Found a total of 1 plugins.
+13.9.2016 18:11:01 nachm.	[Log]	Nyan! :3
+13.9.2016 18:11:01 nachm.	[Log]	Loaded plugin: Tutorial plugin Version: 1.0
+13.9.2016 18:11:26 nachm.	[Error]	No such command found!
+13.9.2016 18:11:26 nachm.	[Trace]	Could not execute command networkmessage.decodedata() as was not present in commands dictionary.

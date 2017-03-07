@@ -1,0 +1,33 @@
+20.12.2016 17:57:13 nachm.	[Trace]	#### Server boot ####
+20.12.2016 17:57:13 nachm.	[Trace]	#### Server boot ####
+20.12.2016 17:57:13 nachm.	[Log]	Server mounted, listening on port 4296
+20.12.2016 17:57:13 nachm.	[Trace]	Found plugin: C:\Users\DemonicLP\Desktop\DarkRiftServer - Free\Plugins\Asgore.dll, type of Asgore.Asgore
+20.12.2016 17:57:13 nachm.	[Trace]	Found a total of 1 plugins.
+20.12.2016 17:57:13 nachm.	[Log]	Nyan! :3
+20.12.2016 17:57:13 nachm.	[Log]	Loaded plugin: Asgore Version: 1.0
+20.12.2016 17:57:24 nachm.	[Log]	Connected: 127.0.0.1:61410
+20.12.2016 17:57:27 nachm.	[Trace]	Exception trace ConnectionService.ProcessDataItem
+20.12.2016 17:57:27 nachm.	[Error]	System.InvalidOperationException: Die Sequenz enthält keine Elemente.
+   bei System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   bei lambda_method(Closure , QueryContext )
+   bei Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass20_0`1.<CompileQueryCore>b__0(QueryContext qc)
+   bei Asgore.Asgore.login(ConnectionService con, NetworkMessage msg)
+   bei Asgore.Asgore.OnDataReceived(ConnectionService con, NetworkMessage& msg)
+   bei DarkRift.ConnectionService.ProcessDataItem(Object context)
+20.12.2016 17:57:27 nachm.	[Trace]	Exception trace ConnectionService.ProcessDataItem
+20.12.2016 17:57:27 nachm.	[Error]	System.InvalidOperationException: Die Sequenz enthält keine Elemente.
+   bei System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   bei lambda_method(Closure , QueryContext )
+   bei Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass20_0`1.<CompileQueryCore>b__0(QueryContext qc)
+   bei Asgore.Asgore.login(ConnectionService con, NetworkMessage msg)
+   bei Asgore.Asgore.OnDataReceived(ConnectionService con, NetworkMessage& msg)
+   bei DarkRift.ConnectionService.ProcessDataItem(Object context)
+20.12.2016 17:57:43 nachm.	[Trace]	Exception trace ConnectionService.ProcessDataItem
+20.12.2016 17:57:43 nachm.	[Error]	System.InvalidOperationException: Die Sequenz enthält keine Elemente.
+   bei System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   bei lambda_method(Closure , QueryContext )
+   bei Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass20_0`1.<CompileQueryCore>b__0(QueryContext qc)
+   bei Asgore.Asgore.login(ConnectionService con, NetworkMessage msg)
+   bei Asgore.Asgore.OnDataReceived(ConnectionService con, NetworkMessage& msg)
+   bei DarkRift.ConnectionService.ProcessDataItem(Object context)
+20.12.2016 17:59:01 nachm.	[Log]	Disconnected: 127.0.0.1:61410

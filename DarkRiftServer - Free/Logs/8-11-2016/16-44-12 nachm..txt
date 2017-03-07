@@ -1,0 +1,7 @@
+8.11.2016 16:44:12 nachm.	[Trace]	#### Server boot ####
+8.11.2016 16:44:12 nachm.	[Trace]	#### Server boot ####
+8.11.2016 16:44:12 nachm.	[Log]	Server mounted, listening on port 4296
+8.11.2016 16:44:12 nachm.	[Trace]	Found plugin: C:\Users\DemonicLP\Desktop\DarkRiftServer - Free\Plugins\Toriel.dll, type of Toriel.Toriel
+8.11.2016 16:44:12 nachm.	[Trace]	Found a total of 1 plugins.
+8.11.2016 16:44:12 nachm.	[Log]	Nyan! :3
+8.11.2016 16:44:12 nachm.	[Log]	Loaded plugin: Tutorial plugin Version: 1.0

@@ -1,0 +1,23 @@
+13.9.2016 18:12:09 nachm.	[Trace]	#### Server boot ####
+13.9.2016 18:12:09 nachm.	[Trace]	#### Server boot ####
+13.9.2016 18:12:09 nachm.	[Log]	Server mounted, listening on port 4296
+13.9.2016 18:12:09 nachm.	[Trace]	Found plugin: C:\Users\DemonicLP\Desktop\DarkRiftServer - Free\Plugins\Toriel.dll, type of Toriel.Toriel
+13.9.2016 18:12:09 nachm.	[Trace]	Found a total of 1 plugins.
+13.9.2016 18:12:09 nachm.	[Log]	Nyan! :3
+13.9.2016 18:12:09 nachm.	[Log]	Loaded plugin: Tutorial plugin Version: 1.0
+13.9.2016 18:12:24 nachm.	[Trace]	Executing command LogPerformance
+13.9.2016 18:12:24 nachm.	[Log]	*************************************************
+Performance stats:
+	Total Connection Read Time:	0ms
+			Header:		0ms
+			Body:		0ms
+		Average:		0ms
+			Header:		0ms
+			Body:		0ms
+	Total Execution Time:		0ms
+		Average:		0ms
+*************************************************
+13.9.2016 18:12:31 nachm.	[Trace]	Executing command Stop
+13.9.2016 18:12:31 nachm.	[Log]	Shutting down server...
+13.9.2016 18:12:31 nachm.	[Trace]	Closing database
+13.9.2016 18:12:31 nachm.	[Trace]	#### Server stop ####

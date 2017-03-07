@@ -1,0 +1,14 @@
+13.12.2016 17:58:16 nachm.	[Trace]	#### Server boot ####
+13.12.2016 17:58:16 nachm.	[Trace]	#### Server boot ####
+13.12.2016 17:58:16 nachm.	[Log]	Server mounted, listening on port 4296
+13.12.2016 17:58:16 nachm.	[Trace]	Found plugin: C:\Users\DemonicLP\Desktop\DarkRiftServer - Free\Plugins\Asgore.dll, type of Asgore.Asgore
+13.12.2016 17:58:16 nachm.	[Trace]	Found a total of 1 plugins.
+13.12.2016 17:58:16 nachm.	[Error]	Plugin Asgore.Asgore failed to instantiate: 
+System.Reflection.TargetInvocationException: Ein Aufrufziel hat einen Ausnahmefehler verursacht. ---> System.IO.FileNotFoundException: Die Datei oder Assembly "System.Interactive.Async, Version=3.0.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263" oder eine Abhängigkeit davon wurde nicht gefunden. Das System kann die angegebene Datei nicht finden.
+   bei Asgore.Asgore..ctor()
+   --- Ende der internen Ausnahmestapelüberwachung ---
+   bei System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   bei System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   bei System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   bei System.Activator.CreateInstance(Type type)
+   bei DarkRift.PluginManager.LoadPlugins(Type[] forceLoadPlugins)
