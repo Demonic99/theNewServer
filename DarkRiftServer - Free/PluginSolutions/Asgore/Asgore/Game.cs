@@ -5,12 +5,19 @@ namespace Asgore
 {
 	public class Game
 	{
-		public Slaves []slaves = new Slaves[2];
+        public Slaves player1;
+        public Slaves player2;
 		public int gameID;
+        private bool deckSelectScene;
 
 
-		public Game ()
+		public Game (Slaves player, Slaves opponent)
 		{
+            player.game = this;
+            opponent.game = this;
+            player1 = player;
+            player2 = opponent;
+            deckSelectScene = true;
 		}
 	}
 }

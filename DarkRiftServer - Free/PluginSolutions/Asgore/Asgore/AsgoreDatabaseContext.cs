@@ -26,7 +26,8 @@ namespace Asgore
         /// Gets or sets the data set for the users in the DB.
         /// </summary>
         public DbSet<User> Users { get; set; }
-        
+        public DbSet<DatabaseDeck> Decks { get; set; }
+
         /// <summary>
         /// <para>
         /// Override this method to configure the database (and other options) to be used for this context.

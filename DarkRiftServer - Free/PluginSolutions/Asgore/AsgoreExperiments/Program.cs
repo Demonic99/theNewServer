@@ -11,7 +11,7 @@ namespace AsgoreExperiments
     {
         static void Main(string[] args)
         {
-            using (var db = new AsgoreDatabaseContext("test.sql"))
+            using (var db = new AsgoreDatabaseContext(AsgoreDatabaseContext.StandardDbFile))
             {
                 db.Database.EnsureCreated();
                 var u = new User { Name = "Luke" };

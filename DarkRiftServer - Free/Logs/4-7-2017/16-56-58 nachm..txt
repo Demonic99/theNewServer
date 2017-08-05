@@ -1,0 +1,11 @@
+4.7.2017 16:56:58 nachm.	[Trace]	#### Server boot ####
+4.7.2017 16:56:58 nachm.	[Trace]	#### Server boot ####
+4.7.2017 16:56:58 nachm.	[Log]	Server mounted, listening on port 4296
+4.7.2017 16:56:58 nachm.	[Trace]	Found plugin: C:\Users\DemonicLP\Documents\GitHub\theNewServer\DarkRiftServer - Free\Plugins\Asgore.dll, type of Asgore.Asgore
+4.7.2017 16:56:58 nachm.	[Trace]	Found a total of 1 plugins.
+4.7.2017 16:56:58 nachm.	[Log]	Nyan! :3
+4.7.2017 16:56:58 nachm.	[Log]	Loaded plugin: Asgore Version: 1.0
+4.7.2017 16:57:18 nachm.	[Error]	No such command found!
+4.7.2017 16:57:18 nachm.	[Trace]	Could not execute command name as was not present in commands dictionary.
+4.7.2017 16:57:23 nachm.	[Error]	No such command found!
+4.7.2017 16:57:23 nachm.	[Trace]	Could not execute command command as was not present in commands dictionary.

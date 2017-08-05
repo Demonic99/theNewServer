@@ -13,18 +13,22 @@ namespace Asgore
     public class Asgore : Plugin
     {
         //Tags!! :-3
-        public const byte LOGINTAG = 0;
-        public const byte MATCHMAKING_TAG = 1;
+        public enum Tags
+        {
+            LOGINTAG = 0, MATCHMAKING_TAG = 1
+        }
 
         //login Subject!! :3
-        public const byte LOGINSUBJECT = 0;
-        public const byte LOGINSUCCESS = 1;
-        public const byte LOGINFAILED = 2;
-        public const byte REGISTER = 3;
+        public enum LoginSubjects
+        {
+            LOGINSUBJECT = 0, LOGINSUCCESS = 1, LOGINFAILED = 2, REGISTER = 3
+        }
 
-        //matchmaking subjects
-        public const byte OPPONENTSLIST = 0;
-        public const byte FRIENDSLIST = 1;
+        public enum MatchmakingSubjects
+        {
+            OPPONENTSLIST = 0, FRIENDSLIST = 1
+        }
+        
 
 
 
@@ -45,13 +49,14 @@ namespace Asgore
                 };
             }
         }
-        public override string author { get { return "Satan"; } }
+        public override string author { get { return "Satan and Junior"; } }
         public override string supportEmail { get { return "example@example.com"; } }
 
 
 
-        public List<Slaves> slaves = new List<Slaves>();
-        public List<Game> games = new List<Game>();
+        public static Dictionary<int, Slaves> slaves = new Dictionary<int, Slaves>();
+        public static Dictionary<ConnectionService, int> host = new Dictionary<ConnectionService, int>();
+        public static List<Game> games = new List<Game>();
 
 
 
@@ -86,8 +91,9 @@ namespace Asgore
         public void OnPlayerDisconnected(ConnectionService con)
         {
             Slaves disconnected = null;
-            foreach (Slaves slave in slaves)
+            foreach (KeyValuePair <int, Slaves>kvp in slaves)
             {
+                Slaves slave = kvp.Value;
                 if (slave.con == con)
                 {
                     disconnected = slave;
@@ -96,7 +102,7 @@ namespace Asgore
             if(disconnected != null)
                 // wenn nicht null, prüfen ob der Spieler noch ingame war ;3
             {
-                slaves.Remove(disconnected);
+                slaves.Remove(disconnected.PlayerID);
                 Interface.Log("was disconnected while logged in");
             }
         }
@@ -107,13 +113,13 @@ namespace Asgore
         {
             if (log)
                 Interface.Log("Received data from " + msg.senderID.ToString());
-            if (msg.tag == LOGINTAG)
+            if (msg.tag == (byte)Tags.LOGINTAG)
             {
-                if (msg.subject == LOGINSUBJECT)
+                if (msg.subject == (ushort)LoginSubjects.LOGINSUBJECT)
                 {
                     Login(con, msg);
                 }
-                if (msg.subject == REGISTER)
+                if (msg.subject == (ushort)LoginSubjects.REGISTER)
                 {
                     Register(con, msg);
                 }
@@ -161,35 +167,35 @@ namespace Asgore
                 name = reader.ReadString();
                 pw = reader.ReadString();
             }
-            IQueryable<User> test;
+            IQueryable<User> users;
             using (var db = new AsgoreDatabaseContext("UserDatabase.sql"))
             {
                 db.Database.EnsureCreated();
-                test = db.Users.Where(u => u.Name == name && u.Password == pw);
+                users = db.Users.Where(u => u.Name == name && u.Password == pw);
 
-
-
-                if (test.Count() != 0)
+                //check if player exists in DATENBANK!!
+                if (users.Any())
                 {
-                    //check if player exists in DATENBANK!!
-                    slaves.Add(new Slaves(con, name, test.First().Id));
+                    slaves.Add(users.First().Id, new Slaves(con, name, users.First().Id));
                     using (DarkRiftWriter writer = new DarkRiftWriter())
                     {
-                        writer.Write(test.First().Id);
-                        con.SendReply(LOGINTAG, LOGINSUCCESS, writer);
+                        writer.Write(users.First().Id);
+                        con.SendReply((byte)Tags.LOGINTAG, (ushort)LoginSubjects.LOGINSUCCESS, writer);
                     }
                     List<string> usernames = new List<string>();
-                    foreach (Slaves slave in slaves)
+                    foreach (KeyValuePair<int, Slaves> kvp in slaves)
                     {
-                        if (slave.nonavailable == false)
+                        Slaves slave = kvp.Value;
+                        if (!slave.nonavailable)
                         {
                             usernames.Add(slave.name);
                         }
                     }
                     string [] usernamearray = usernames.ToArray();
-                    foreach (Slaves slave in slaves)
+                    foreach (KeyValuePair<int, Slaves> kvp in slaves)
                     {
-                        if(slave.nonavailable == true)
+                        Slaves slave = kvp.Value;
+                        if (slave.nonavailable)
                         {
                             continue;
                         }
@@ -197,6 +203,7 @@ namespace Asgore
                         {
                             writer.Write(slaves.Count);
                             writer.Write(usernamearray);
+                            slave.con.SendReply((byte)Tags.MATCHMAKING_TAG, (ushort)MatchmakingSubjects.OPPONENTSLIST, writer);
                         }
                     }
                 }
@@ -204,13 +211,33 @@ namespace Asgore
                 {
                     using (DarkRiftWriter writer = new DarkRiftWriter())
                     {
-                        con.SendReply(LOGINTAG, LOGINFAILED, writer);
+                        con.SendReply((byte)Tags.LOGINTAG, (ushort)LoginSubjects.LOGINFAILED, writer);
                     }
                 }
             }
         }
 
-        
+        public void StartGame (ConnectionService con, NetworkMessage msg)
+        {
+            string name;
+
+            using (DarkRiftReader reader = (DarkRiftReader)msg.data)
+            {
+                name = reader.ReadString();
+            }
+            Slaves opponent = Slaves.GetPlayerByName(name);
+            Slaves player = slaves[host[con]];
+            if (opponent == null) return;
+            if (player == null) return;
+            //tell player "opponent not found"
+            Game game = new Game(player, opponent);
+            games.Add(game);
+        }
+
+        public void DeckBuild(ConnectionService con, NetworkMessage msg)
+        {
+        }
+
 
 
         public void SetLog_Command(string[] parts)

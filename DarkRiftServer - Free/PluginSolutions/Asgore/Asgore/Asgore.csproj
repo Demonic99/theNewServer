@@ -193,7 +193,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Army.cs" />
     <Compile Include="AsgoreDatabaseContext.cs" />
+    <Compile Include="Cards.cs" />
+    <Compile Include="DatabaseDeck.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Asgore.cs" />
     <Compile Include="Slaves.cs" />
