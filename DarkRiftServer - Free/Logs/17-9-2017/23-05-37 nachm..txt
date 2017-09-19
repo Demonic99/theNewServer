@@ -1,0 +1,25 @@
+17.9.2017 23:05:37 nachm.	[Trace]	#### Server boot ####
+17.9.2017 23:05:37 nachm.	[Trace]	#### Server boot ####
+17.9.2017 23:05:37 nachm.	[Log]	Server mounted, listening on port 4296
+17.9.2017 23:05:37 nachm.	[Trace]	Found plugin: C:\Users\DemonicLP\Documents\GitHub\theNewServer\DarkRiftServer - Free\Plugins\Asgore.dll, type of Asgore.Asgore
+17.9.2017 23:05:37 nachm.	[Trace]	Found a total of 1 plugins.
+17.9.2017 23:05:37 nachm.	[Log]	Nyan! :3
+17.9.2017 23:05:37 nachm.	[Log]	Loaded plugin: Asgore Version: 1.0
+17.9.2017 23:05:42 nachm.	[Log]	Connected: 127.0.0.1:56830
+17.9.2017 23:05:52 nachm.	[Trace]	Exception trace ConnectionService.ProcessDataItem
+17.9.2017 23:05:52 nachm.	[Error]	Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Microsoft.Data.Sqlite.SqliteException: SQLite Error 1: 'no such table: Decks'.
+   bei Microsoft.Data.Sqlite.Interop.MarshalEx.ThrowExceptionForRC(Int32 rc, Sqlite3Handle db)
+   bei Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   bei Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, String executeMethod, IReadOnlyDictionary`2 parameterValues, Boolean closeConnection)
+   bei Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   bei Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- Ende der internen Ausnahmestapelüberwachung ---
+   bei Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   bei Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(Tuple`2 parameters)
+   bei Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   bei Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   bei Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   bei Asgore.Asgore.DatabaseDeckbuild(Slaves player, List`1 cards)
+   bei Asgore.Asgore.Login(ConnectionService con, NetworkMessage msg)
+   bei Asgore.Asgore.OnDataReceived(ConnectionService con, NetworkMessage& msg)
+   bei DarkRift.ConnectionService.ProcessDataItem(Object context)

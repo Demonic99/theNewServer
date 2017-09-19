@@ -1,0 +1,37 @@
+17.9.2017 22:51:50 nachm.	[Trace]	#### Server boot ####
+17.9.2017 22:51:50 nachm.	[Trace]	#### Server boot ####
+17.9.2017 22:51:50 nachm.	[Log]	Server mounted, listening on port 4296
+17.9.2017 22:51:50 nachm.	[Trace]	Found plugin: C:\Users\DemonicLP\Documents\GitHub\theNewServer\DarkRiftServer - Free\Plugins\Asgore.dll, type of Asgore.Asgore
+17.9.2017 22:51:50 nachm.	[Trace]	Found a total of 1 plugins.
+17.9.2017 22:51:50 nachm.	[Log]	Nyan! :3
+17.9.2017 22:51:50 nachm.	[Log]	Loaded plugin: Asgore Version: 1.0
+17.9.2017 22:51:52 nachm.	[Log]	Connected: 127.0.0.1:56729
+17.9.2017 22:51:53 nachm.	[Log]	Disconnected: 127.0.0.1:56729
+17.9.2017 22:52:16 nachm.	[Log]	Connected: 127.0.0.1:56737
+17.9.2017 22:52:27 nachm.	[Trace]	Exception trace ConnectionService.ProcessDataItem
+17.9.2017 22:52:27 nachm.	[Error]	System.InvalidOperationException: The entity type 'DatabaseDeck' requires a primary key to be defined.
+   bei Microsoft.EntityFrameworkCore.Internal.ModelValidator.ShowError(String message)
+   bei Microsoft.EntityFrameworkCore.Internal.ModelValidator.EnsureNonNullPrimaryKeys(IModel model)
+   bei Microsoft.EntityFrameworkCore.Internal.ModelValidator.Validate(IModel model)
+   bei Microsoft.EntityFrameworkCore.Internal.RelationalModelValidator.Validate(IModel model)
+   bei Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.CreateModel(DbContext context, IConventionSetBuilder conventionSetBuilder, IModelValidator validator)
+   bei System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   bei Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel()
+   bei Microsoft.EntityFrameworkCore.Internal.LazyRef`1.get_Value()
+   bei Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   bei Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProvider provider)
+   bei Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProvider provider)
+   bei Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProvider provider)
+   bei Microsoft.Extensions.DependencyInjection.ServiceProvider.<>c__DisplayClass16_0.<RealizeService>b__0(ServiceProvider provider)
+   bei Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   bei Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   bei Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServiceCollectionExtensions.<>c.<AddEntityFramework>b__0_13(IServiceProvider p)
+   bei Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProvider provider)
+   bei Microsoft.Extensions.DependencyInjection.ServiceProvider.<>c__DisplayClass16_0.<RealizeService>b__0(ServiceProvider provider)
+   bei Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   bei Microsoft.EntityFrameworkCore.Infrastructure.AccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+   bei Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_DatabaseCreator()
+   bei Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   bei Asgore.Asgore.Login(ConnectionService con, NetworkMessage msg)
+   bei Asgore.Asgore.OnDataReceived(ConnectionService con, NetworkMessage& msg)
+   bei DarkRift.ConnectionService.ProcessDataItem(Object context)

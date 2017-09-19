@@ -1,0 +1,22 @@
+17.9.2017 23:07:23 nachm.	[Trace]	#### Server boot ####
+17.9.2017 23:07:23 nachm.	[Trace]	#### Server boot ####
+17.9.2017 23:07:23 nachm.	[Log]	Server mounted, listening on port 4296
+17.9.2017 23:07:23 nachm.	[Trace]	Found plugin: C:\Users\DemonicLP\Documents\GitHub\theNewServer\DarkRiftServer - Free\Plugins\Asgore.dll, type of Asgore.Asgore
+17.9.2017 23:07:23 nachm.	[Trace]	Found a total of 1 plugins.
+17.9.2017 23:07:23 nachm.	[Log]	Nyan! :3
+17.9.2017 23:07:23 nachm.	[Log]	Loaded plugin: Asgore Version: 1.0
+17.9.2017 23:07:31 nachm.	[Log]	Connected: 127.0.0.1:56860
+17.9.2017 23:07:47 nachm.	[Trace]	Exception trace ConnectionService.ProcessDataItem
+17.9.2017 23:07:47 nachm.	[Error]	Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: Database operation expected to affect 1 row(s) but actually affected 0 row(s). Data may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+   bei Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ThrowAggregateUpdateConcurrencyException(Int32 commandIndex, Int32 expectedRowsAffected, Int32 rowsAffected)
+   bei Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithPropagation(Int32 commandIndex, DbDataReader reader)
+   bei Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(DbDataReader reader)
+   bei Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   bei Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(Tuple`2 parameters)
+   bei Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   bei Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   bei Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   bei Asgore.Asgore.DatabaseDeckbuild(Slaves player, List`1 cards)
+   bei Asgore.Asgore.Login(ConnectionService con, NetworkMessage msg)
+   bei Asgore.Asgore.OnDataReceived(ConnectionService con, NetworkMessage& msg)
+   bei DarkRift.ConnectionService.ProcessDataItem(Object context)

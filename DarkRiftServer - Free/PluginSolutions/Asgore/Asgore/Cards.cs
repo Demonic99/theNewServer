@@ -16,7 +16,9 @@ namespace Asgore
         public short Spawn;
         public short Regen;
         public State CardState;
+        public ushort ArmyId;
         public SpecialAttack Attack;
+
         public Cards (ushort id, byte movement, short hp, short dmg, Position cardPosition, short spawn, short regen, State cardState, ushort armyId, ushort specialAttackId)
         {
             Id = id;
@@ -27,6 +29,7 @@ namespace Asgore
             Spawn = spawn;
             Regen = regen;
             CardState = cardState;
+            ArmyId = armyId;
             Attack = SpecialAttack.createSpecialAttack(specialAttackId);
         }
         public enum State

@@ -72,13 +72,7 @@ namespace Asgore
             ConnectionService.onPostPlayerConnect += OnPostPlayerConnected;
             ConnectionService.onPlayerDisconnect += OnPlayerDisconnected;
 
-            /* using (var db = new AsgoreDatabaseContext("UserDatabase.sql"))
-             {
-                 db.Database.EnsureCreated();
-                 User go = new User { Name = "Pleb", Password = "passwort", Email = "pleb.pleb@plebpl.eb" };
-                 db.Users.Add(go);
-                 db.SaveChanges();
-             }*/
+            
 
         }
 
@@ -236,6 +230,22 @@ namespace Asgore
 
         public void DeckBuild(ConnectionService con, NetworkMessage msg)
         {
+            List<ushort> playerDechList = new List<ushort>();
+            
+            DatabaseDeckbuild(slaves.First().Value, new List<ushort>() {});
+        }
+
+        public void DatabaseDeckbuild(Slaves player, List<ushort> cards)
+        {
+            IQueryable<DatabaseDeck> test;
+            using (var db = new AsgoreDatabaseContext("UserDatabase.sql"))
+            {
+                db.Database.EnsureCreated();
+                DatabaseDeck go = new DatabaseDeck(player.PlayerID, cards);
+                db.Decks.Add(go);
+                db.SaveChanges();
+                //Mitteilung, hat geklappt :3
+            }
         }
 
 
