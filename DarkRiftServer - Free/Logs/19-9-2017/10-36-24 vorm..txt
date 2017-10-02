@@ -1,0 +1,13 @@
+19.9.2017 10:36:24 vorm.	[Trace]	#### Server boot ####
+19.9.2017 10:36:24 vorm.	[Trace]	#### Server boot ####
+19.9.2017 10:36:25 vorm.	[Log]	Server mounted, listening on port 4296
+19.9.2017 10:36:25 vorm.	[Trace]	Found plugin: C:\Users\DemonicLP\Documents\GitHub\theNewServer\DarkRiftServer - Free\Plugins\Asgore.dll, type of Asgore.Asgore
+19.9.2017 10:36:25 vorm.	[Trace]	Found a total of 1 plugins.
+19.9.2017 10:36:25 vorm.	[Log]	Nyan! :3
+19.9.2017 10:36:25 vorm.	[Log]	Loaded plugin: Asgore Version: 1.0
+19.9.2017 10:39:00 vorm.	[Log]	Connected: 127.0.0.1:63412
+19.9.2017 10:39:24 vorm.	[Log]	was disconnected while logged in
+19.9.2017 10:39:24 vorm.	[Log]	Disconnected: 127.0.0.1:63412
+19.9.2017 10:39:26 vorm.	[Log]	Connected: 127.0.0.1:63430
+19.9.2017 10:40:36 vorm.	[Log]	was disconnected while logged in
+19.9.2017 10:40:36 vorm.	[Log]	Disconnected: 127.0.0.1:63430

@@ -18,8 +18,9 @@ namespace Asgore
         public State CardState;
         public ushort ArmyId;
         public SpecialAttack Attack;
+        public int Cost;
 
-        public Cards (ushort id, byte movement, short hp, short dmg, Position cardPosition, short spawn, short regen, State cardState, ushort armyId, ushort specialAttackId)
+        public Cards (ushort id, byte movement, short hp, short dmg, Position cardPosition, short spawn, short regen, State cardState, ushort armyId, ushort specialAttackId, int cost)
         {
             Id = id;
             Movement = movement;
@@ -31,6 +32,7 @@ namespace Asgore
             CardState = cardState;
             ArmyId = armyId;
             Attack = SpecialAttack.createSpecialAttack(specialAttackId);
+            Cost = cost;
         }
         public enum State
         {

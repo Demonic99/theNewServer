@@ -15,7 +15,7 @@ namespace Asgore
         //Tags!! :-3
         public enum Tags
         {
-            LOGINTAG = 0, MATCHMAKING_TAG = 1
+            LOGINTAG = 0, MATCHMAKING_TAG = 1, CARDTAG = 2
         }
 
         //login Subject!! :3
@@ -27,6 +27,11 @@ namespace Asgore
         public enum MatchmakingSubjects
         {
             OPPONENTSLIST = 0, FRIENDSLIST = 1
+        }
+
+        public enum CardSubjects
+        {
+            AVAILABLECARDS = 0
         }
         
 
@@ -116,6 +121,13 @@ namespace Asgore
                 if (msg.subject == (ushort)LoginSubjects.REGISTER)
                 {
                     Register(con, msg);
+                }
+            }
+            if (msg.tag == (byte) Tags.CARDTAG)
+            {
+                if (msg.subject == (ushort) CardSubjects.AVAILABLECARDS)
+                {
+                    CardRequest(con, msg);
                 }
             }
         }
@@ -230,8 +242,14 @@ namespace Asgore
 
         public void DeckBuild(ConnectionService con, NetworkMessage msg)
         {
-            List<ushort> playerDechList = new List<ushort>();
-            
+            List<ushort> playerDeckList = new List<ushort>();
+            using (DarkRiftReader reader = msg.data as DarkRiftReader)
+            {
+                for (int i = 0; i < 10; i++)
+                {
+                    playerDeckList.Add(reader.ReadUInt16());
+                }
+            }
             DatabaseDeckbuild(slaves.First().Value, new List<ushort>() {});
         }
 
@@ -245,6 +263,16 @@ namespace Asgore
                 db.Decks.Add(go);
                 db.SaveChanges();
                 //Mitteilung, hat geklappt :3
+            }
+        }
+
+        //Wird aufgerufen, wenn der Spieler wissen will, welche Karten er freigeschalten hat.
+        public void CardRequest(ConnectionService con, NetworkMessage msg)
+        {
+            using (DarkRiftWriter writer = new DarkRiftWriter())
+            {
+                writer.Write("Liste der verfügbaren Karten");
+                con.SendReply((byte)Tags.CARDTAG, (ushort)CardSubjects.AVAILABLECARDS, writer);
             }
         }
 
